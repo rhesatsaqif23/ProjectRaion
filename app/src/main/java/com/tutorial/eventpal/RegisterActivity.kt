@@ -1,4 +1,4 @@
-package com.tutorial.firebaseapp
+package com.tutorial.eventpal
 
 import android.app.ProgressDialog
 import android.content.Intent
@@ -9,8 +9,8 @@ import android.widget.EditText
 import android.widget.Toast
 import android.widget.Toast.LENGTH_SHORT
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.UserProfileChangeRequest
 import com.google.firebase.auth.userProfileChangeRequest
+import com.tutorial.firebaseapp.R
 
 class RegisterActivity : AppCompatActivity() {
     lateinit var editFullName: EditText
