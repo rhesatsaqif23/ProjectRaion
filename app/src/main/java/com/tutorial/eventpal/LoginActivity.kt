@@ -13,7 +13,7 @@ import com.tutorial.firebaseapp.R
 
 class LoginActivity : AppCompatActivity() {
 
-    lateinit var editEmail: EditText
+    lateinit var editUsername: EditText
     lateinit var editPassword: EditText
     lateinit var btnRegister: Button
     lateinit var btnLogin: Button
@@ -32,7 +32,7 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
-//        editEmail = findViewById(R.id.email)
+        editUsername = findViewById(R.id.username)
         editPassword = findViewById(R.id.password)
         btnRegister = findViewById(R.id.btn_register)
         btnLogin = findViewById(R.id.btn_login)
@@ -42,7 +42,7 @@ class LoginActivity : AppCompatActivity() {
         progressDialog.setMessage("Silahkan tunggu...")
 
         btnLogin.setOnClickListener {
-            if (editEmail.text.isNotEmpty() && editPassword.text.isNotEmpty()) {
+            if (editUsername.text.isNotEmpty() && editPassword.text.isNotEmpty()) {
                 processLogin()
             } else {
                 Toast.makeText(this, "Silahkan isi email dan password terlebih dahulu", LENGTH_SHORT).show()
@@ -54,7 +54,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun processLogin() {
-        val email = editEmail.text.toString()
+        val email = editUsername.text.toString()
         val password = editPassword.text.toString()
 
         progressDialog.show()
