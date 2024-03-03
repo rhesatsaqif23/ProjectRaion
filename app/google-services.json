@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "50839827762",
+    "project_id": "myapp-c168b",
+    "storage_bucket": "myapp-c168b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:50839827762:android:1ffbf256b2dc38bf22932b",
+        "android_client_info": {
+          "package_name": "com.tutorial.firebaseapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-kCulUD_ZnwlcMfrYIdQmMy1lj9fxpcM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
