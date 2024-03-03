@@ -15,10 +15,9 @@ class LoginActivity : AppCompatActivity() {
 
     lateinit var editUsername: EditText
     lateinit var editPassword: EditText
-    lateinit var btnRegister: Button
-    lateinit var btnLogin: Button
-    lateinit var progressDialog: ProgressDialog
-
+//    lateinit var btnRegister: Button
+//    lateinit var btnLogin: Button
+//    lateinit var progressDialog: ProgressDialog
 
     var firebaseAuth = FirebaseAuth.getInstance()
 
@@ -34,39 +33,39 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
         editUsername = findViewById(R.id.username)
         editPassword = findViewById(R.id.password)
-        btnRegister = findViewById(R.id.btn_register)
-        btnLogin = findViewById(R.id.btn_login)
+//        btnRegister = findViewById(R.id.btn_register)
+//        btnLogin = findViewById(R.id.btn_login)
 
-        progressDialog = ProgressDialog(this)
-        progressDialog.setTitle("Logging")
-        progressDialog.setMessage("Silahkan tunggu...")
+//        progressDialog = ProgressDialog(this)
+//        progressDialog.setTitle("Logging")
+//        progressDialog.setMessage("Silahkan tunggu...")
 
-        btnLogin.setOnClickListener {
-            if (editUsername.text.isNotEmpty() && editPassword.text.isNotEmpty()) {
-                processLogin()
-            } else {
-                Toast.makeText(this, "Silahkan isi email dan password terlebih dahulu", LENGTH_SHORT).show()
-            }
+//        btnLogin.setOnClickListener {
+//            if (editUsername.text.isNotEmpty() && editPassword.text.isNotEmpty()) {
+//                processLogin()
+//            } else {
+//                Toast.makeText(this, "Silahkan isi email dan password terlebih dahulu", LENGTH_SHORT).show()
+//            }
         }
-        btnRegister.setOnClickListener {
-            startActivity(Intent(this, RegisterActivity::class.java))
-        }
-    }
+//        btnRegister.setOnClickListener {
+//            startActivity(Intent(this, RegisterActivity::class.java))
+//        }
+//    }
 
-    private fun processLogin() {
-        val email = editUsername.text.toString()
-        val password = editPassword.text.toString()
-
-        progressDialog.show()
-        firebaseAuth.signInWithEmailAndPassword(email, password)
-            .addOnSuccessListener {
-                startActivity(Intent(this, MainActivity::class.java))
-            }
-            .addOnFailureListener{ error ->
-                Toast.makeText(this, error.localizedMessage, LENGTH_SHORT).show()
-            }
-            .addOnCompleteListener{
-                progressDialog.dismiss()
-            }
-    }
+//    private fun processLogin() {
+//        val username = editUsername.text.toString()
+//        val password = editPassword.text.toString()
+//
+//        progressDialog.show()
+//        firebaseAuth.signInWithEmailAndPassword(username, password)
+//            .addOnSuccessListener {
+//                startActivity(Intent(this, MainActivity::class.java))
+//            }
+//            .addOnFailureListener{ error ->
+//                Toast.makeText(this, error.localizedMessage, LENGTH_SHORT).show()
+//            }
+//            .addOnCompleteListener{
+//                progressDialog.dismiss()
+//            }
+//    }
 }
