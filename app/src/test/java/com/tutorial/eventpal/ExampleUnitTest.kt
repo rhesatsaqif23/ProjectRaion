@@ -1,4 +1,4 @@
-package com.tutorial.firebaseapp
+package com.tutorial.eventpal
 
 import org.junit.Test
 

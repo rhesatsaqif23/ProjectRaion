@@ -1,12 +1,12 @@
-package com.tutorial.firebaseapp
+package com.tutorial.eventpal
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
-import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
+import com.tutorial.firebaseapp.R
 
 class MainActivity : AppCompatActivity() {
     lateinit var textFullName: TextView

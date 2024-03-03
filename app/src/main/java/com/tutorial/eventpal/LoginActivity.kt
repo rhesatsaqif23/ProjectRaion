@@ -1,4 +1,4 @@
-package com.tutorial.firebaseapp
+package com.tutorial.eventpal
 
 import android.app.ProgressDialog
 import android.content.Intent
@@ -6,10 +6,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
-import android.widget.ProgressBar
 import android.widget.Toast
 import android.widget.Toast.LENGTH_SHORT
 import com.google.firebase.auth.FirebaseAuth
+import com.tutorial.firebaseapp.R
 
 class LoginActivity : AppCompatActivity() {
 
@@ -32,7 +32,7 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
-        editEmail = findViewById(R.id.email)
+//        editEmail = findViewById(R.id.email)
         editPassword = findViewById(R.id.password)
         btnRegister = findViewById(R.id.btn_register)
         btnLogin = findViewById(R.id.btn_login)
