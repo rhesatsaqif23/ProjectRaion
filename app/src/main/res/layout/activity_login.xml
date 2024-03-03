@@ -11,7 +11,7 @@
     <ImageView
         android:layout_width="149dp"
         android:layout_height="164dp"
-        android:layout_marginTop="85dp"
+        android:layout_marginTop="75dp"
         android:layout_gravity="center"
         android:src="@drawable/iconapk" />
 
@@ -96,14 +96,14 @@
             android:id="@+id/line_or"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:src="@drawable/lineor"/>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_fb"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/borderfb"
             android:textColor="@color/white"
             android:fontFamily="@font/interbold"
