@@ -27,12 +27,12 @@ class MainActivity : AppCompatActivity() {
             textUsername.text = firebaseUser.displayName
             textEmail.text = firebaseUser.email
         } else {
-            startActivity(Intent(this, LoginActivity::class.java))
+            startActivity(Intent(this, SplashActivity2::class.java))
             finish()
         }
         btnLogout.setOnClickListener() {
             firebaseAuth.signOut()
-            startActivity(Intent(this, LoginActivity::class.java))
+            startActivity(Intent(this, SplashActivity2::class.java))
             finish()
         }
     }

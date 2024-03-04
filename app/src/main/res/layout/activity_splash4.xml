@@ -44,7 +44,7 @@
         android:src="@drawable/splashpagination3" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_signin"
+        android:id="@+id/btn_start"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginTop="30dp"
