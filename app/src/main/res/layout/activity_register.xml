@@ -8,7 +8,7 @@
     android:gravity="center_vertical"
     android:layout_gravity="center_vertical"
     android:background="@color/white"
-    tools:context="com.tutorial.eventpal.LoginActivity">
+    tools:context="com.tutorial.eventpal.RegisterActivity">
 
     <ImageView
         android:layout_width="149dp"
@@ -26,8 +26,8 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/black"
             android:fontFamily="@font/interbold"
+            android:textColor="@color/black"
             android:textSize="14sp"
             android:text=" Username" />
 
@@ -35,22 +35,46 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:boxBackgroundMode="outline">
-            <com.google.android.material.textfield.TextInputEditText
+            <EditText
                 android:id="@+id/username"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:background="@drawable/borderlogin"
                 android:fontFamily="@font/robotoregular"
                 android:textSize="12sp"
-                android:hint="Enter your username"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                android:hint="Enter your username" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/black"
             android:fontFamily="@font/interbold"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:text=" Email" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxBackgroundMode="outline">
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/borderlogin"
+                android:fontFamily="@font/robotoregular"
+                android:textSize="12sp"
+                android:inputType="textEmailAddress"
+                android:hint="Enter your email" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/interbold"
+            android:textColor="@color/black"
             android:textSize="14sp"
             android:layout_marginTop="10dp"
             android:text=" Password" />
@@ -67,83 +91,69 @@
                 android:background="@drawable/borderlogin"
                 android:fontFamily="@font/robotoregular"
                 android:textSize="12sp"
-                android:hint="Enter your password"
-                android:inputType="textPassword" />
+                android:inputType="textPassword"
+                android:hint="Enter your password" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/interbold"
             android:textColor="@color/black"
-            android:fontFamily="@font/interbold"
-            android:layout_marginTop="14dp"
             android:textSize="14sp"
-            android:text=" Forgot Password?" />
+            android:layout_marginTop="10dp"
+            android:text=" Confirm Password" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_signin"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/bordersign"
-            android:textColor="@color/white"
-            android:fontFamily="@font/interbold"
-            android:textSize="14sp"
-            android:textAllCaps="false"
-            android:text="Sign In" />
-
-        <ImageView
-            android:id="@+id/line_or"
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:src="@drawable/lineor"/>
+            app:boxBackgroundMode="outline"
+            app:passwordToggleEnabled="true">
+            <EditText
+                android:id="@+id/password_conf"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/borderlogin"
+                android:fontFamily="@font/robotoregular"
+                android:textSize="12sp"
+                android:inputType="textPassword"
+                android:hint="Enter your password" />
+        </com.google.android.material.textfield.TextInputLayout>
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_fb"
+            android:id="@+id/btn_signup"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/borderfb"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bordersign"
+            android:fontFamily="@font/interbold"
+            android:textAllCaps="false"
             android:textColor="@color/white"
-            android:fontFamily="@font/interbold"
             android:textSize="14sp"
-            android:textAllCaps="false"
-            android:text="Sign in with Facebook" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_google"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/borderggl"
-            android:textColor="@color/black"
-            android:fontFamily="@font/interbold"
-            android:textSize="14sp"
-            android:textAllCaps="false"
-            android:text="Sign in with Google" />
+            android:text="Sign Up" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:orientation="horizontal"
-            android:layout_marginTop="30dp">
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="10dp"
                 android:fontFamily="@font/intermedium"
-                android:text="New user?" />
+                android:text="Already have an account?" />
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btn_register"
+                android:id="@+id/btn_signin"
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
                 android:background="@drawable/borderregister"
-                android:textColor="@color/black"
                 android:fontFamily="@font/interbold"
                 android:textAllCaps="false"
-                android:text="Register here" />
+                android:textColor="@color/black"
+                android:text="Sign in here" />
         </LinearLayout>
+
     </LinearLayout>
 </LinearLayout>
