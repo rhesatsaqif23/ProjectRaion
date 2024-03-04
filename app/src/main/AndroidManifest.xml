@@ -13,10 +13,20 @@
         android:theme="@style/Theme.FirebaseApp"
         tools:targetApi="31">
         <activity
+            android:name="com.tutorial.eventpal.SplashActivity4"
+            android:exported="false" />
+        <activity
+            android:name="com.tutorial.eventpal.SplashActivity3"
+            android:exported="false" />
+        <activity
+            android:name="com.tutorial.eventpal.SplashActivity2"
+            android:exported="false" />
+        <activity
             android:name="com.tutorial.eventpal.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
