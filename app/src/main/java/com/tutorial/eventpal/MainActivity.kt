@@ -9,7 +9,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.tutorial.firebaseapp.R
 
 class MainActivity : AppCompatActivity() {
-    lateinit var textFullName: TextView
+    lateinit var textUsername: TextView
     lateinit var textEmail:TextView
     lateinit var btnLogout: Button
 
@@ -18,21 +18,21 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        textFullName = findViewById(R.id.full_name)
+        textUsername = findViewById(R.id.username)
         textEmail = findViewById(R.id.email)
         btnLogout = findViewById(R.id.btn_logout)
 
         val firebaseUser = firebaseAuth.currentUser
         if (firebaseUser != null) {
-            textFullName.text = firebaseUser.displayName
+            textUsername.text = firebaseUser.displayName
             textEmail.text = firebaseUser.email
         } else {
-            startActivity(Intent(this, LoginActivity::class.java))
+            startActivity(Intent(this, SplashActivity2::class.java))
             finish()
         }
         btnLogout.setOnClickListener() {
             firebaseAuth.signOut()
-            startActivity(Intent(this, LoginActivity::class.java))
+            startActivity(Intent(this, SplashActivity2::class.java))
             finish()
         }
     }
