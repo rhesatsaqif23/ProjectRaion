@@ -34,7 +34,9 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:boxBackgroundMode="outline">
+            app:boxBackgroundMode="outline"
+            app:startIconDrawable="@drawable/iconusername">
+
             <EditText
                 android:id="@+id/username"
                 android:layout_width="match_parent"
@@ -45,6 +47,7 @@
                 android:inputType="textPersonName"
                 android:hint="Enter your username" />
         </com.google.android.material.textfield.TextInputLayout>
+
 
         <TextView
             android:layout_width="match_parent"
@@ -58,7 +61,9 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:boxBackgroundMode="outline">
+            app:boxBackgroundMode="outline"
+            app:startIconDrawable="@drawable/iconmail">
+
             <EditText
                 android:id="@+id/email"
                 android:layout_width="match_parent"
@@ -83,7 +88,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:boxBackgroundMode="outline"
-            app:passwordToggleEnabled="true">
+            app:passwordToggleEnabled="true"
+            app:startIconDrawable="@drawable/iconpassword">
+
             <EditText
                 android:id="@+id/password"
                 android:layout_width="match_parent"
@@ -108,7 +115,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:boxBackgroundMode="outline"
-            app:passwordToggleEnabled="true">
+            app:passwordToggleEnabled="true"
+            app:startIconDrawable="@drawable/iconpassword">
+
             <EditText
                 android:id="@+id/password_conf"
                 android:layout_width="match_parent"

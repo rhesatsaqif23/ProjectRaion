@@ -19,7 +19,6 @@ class RegisterActivity : AppCompatActivity() {
     lateinit var btnSignUp: Button
     lateinit var btnSignIn: Button
     lateinit var progressDialog: ProgressDialog
-
     val firebaseAuth = FirebaseAuth.getInstance()
 
     override fun onStart() {
@@ -54,7 +53,7 @@ class RegisterActivity : AppCompatActivity() {
                 if (editPassword.text.toString() == editpasswordConf.text.toString()) {
                     processSignUp()
                 } else {
-                    Toast.makeText(this, "Password invalid", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Invalid password", Toast.LENGTH_SHORT).show()
                 }
             } else {
                 Toast.makeText(this, "Please enter all the required data", Toast.LENGTH_SHORT).show()
