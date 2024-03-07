@@ -5,6 +5,14 @@ plugins {
 }
 
 android {
+    signingConfigs {
+        getByName("debug") {
+            storeFile = file("D:\\Documents\\GitHub\\ProjectRaion\\keystore\\keystore.jks")
+            storePassword = "raion24"
+            keyAlias = "keyapp"
+            keyPassword = "raion24"
+        }
+    }
     namespace = "com.tutorial.firebaseapp"
     compileSdk = 34
 
@@ -16,6 +24,7 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        signingConfig = signingConfigs.getByName("debug")
     }
 
     buildTypes {
@@ -53,4 +62,9 @@ dependencies {
     implementation("com.google.firebase:firebase-analytics-ktx")
     implementation(platform("com.google.firebase:firebase-bom:32.7.3"))
     implementation("com.google.firebase:firebase-analytics")
+
+    implementation (platform("com.google.firebase:firebase-bom:31.5.0"))
+    implementation ("com.google.firebase:firebase-auth-ktx")
+    implementation ("com.google.android.gms:play-services-auth:21.0.0")
+
 }

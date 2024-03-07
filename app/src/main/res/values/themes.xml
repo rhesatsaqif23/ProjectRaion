@@ -6,4 +6,6 @@
     </style>
 
     <style name="Theme.FirebaseApp" parent="Base.Theme.FirebaseApp" />
+    Theme.AppCompat.DayNight.NoActionBar
 </resources>
+
