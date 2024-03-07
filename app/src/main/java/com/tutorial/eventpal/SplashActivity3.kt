@@ -21,6 +21,5 @@ class SplashActivity3 : AppCompatActivity() {
             val options = ActivityOptions.makeCustomAnimation(this, R.anim.slide_in_right, R.anim.slide_out_left)
             startActivity(intent, options.toBundle())
         }
-
     }
 }
