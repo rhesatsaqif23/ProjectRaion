@@ -1,6 +1,7 @@
 package com.tutorial.eventpal
 
 import android.annotation.SuppressLint
+import android.app.ActivityOptions
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -16,7 +17,9 @@ class SplashActivity2 : AppCompatActivity() {
 
         btnContinue = findViewById(R.id.btn_continue1)
         btnContinue.setOnClickListener {
-            startActivity(Intent(this, SplashActivity3::class.java))
+            val intent = Intent(this, SplashActivity3::class.java)
+            val options = ActivityOptions.makeCustomAnimation(this, R.anim.slide_in_right, R.anim.slide_out_left)
+            startActivity(intent, options.toBundle())
         }
     }
 }

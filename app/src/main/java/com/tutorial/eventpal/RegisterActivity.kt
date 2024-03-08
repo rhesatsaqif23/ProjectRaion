@@ -19,8 +19,7 @@ class RegisterActivity : AppCompatActivity() {
     lateinit var btnSignUp: Button
     lateinit var btnSignIn: Button
     lateinit var progressDialog: ProgressDialog
-
-    var firebaseAuth = FirebaseAuth.getInstance()
+    val firebaseAuth = FirebaseAuth.getInstance()
 
     override fun onStart() {
         super.onStart()
@@ -48,12 +47,13 @@ class RegisterActivity : AppCompatActivity() {
             startActivity(Intent(this, LoginActivity::class.java))
             finish()
         }
+
         btnSignUp.setOnClickListener {
             if (editUsername.text.isNotEmpty() && editEmail.text.isNotEmpty() && editPassword.text.isNotEmpty()) {
                 if (editPassword.text.toString() == editpasswordConf.text.toString()) {
                     processSignUp()
                 } else {
-                    Toast.makeText(this, "Password invalid", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Invalid password", Toast.LENGTH_SHORT).show()
                 }
             } else {
                 Toast.makeText(this, "Please enter all the required data", Toast.LENGTH_SHORT).show()
