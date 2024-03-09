@@ -9,7 +9,7 @@
     <ImageView
         android:id="@+id/top_gradient"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="225dp"
         android:scaleType="fitXY"
         app:layout_constraintTop_toTopOf="parent"
         android:src="@drawable/topgradient"/>
@@ -19,7 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginVertical="50dp"
+        android:layout_marginTop="40dp"
         android:layout_marginHorizontal="20dp">
 
         <ImageView
@@ -46,7 +46,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         app:layout_constraintTop_toBottomOf="@id/arrow_linear"
-        android:src="@drawable/detailsorganizer"/>
+        android:src="@drawable/detailsorganizer"
+        android:contentDescription="TODO" />
 
     <TextView
         android:id="@+id/name_organizer"
@@ -116,6 +117,7 @@
             android:fontFamily="@font/intermedium"
             android:layout_gravity="center"
             android:layout_marginStart="5dp"
+            android:textColor="@color/grey"
             android:textSize="13sp"
             android:text="(276)" />
     </LinearLayout>
@@ -129,9 +131,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="8dp"
         android:textAlignment="center"
-        android:paddingHorizontal="40dp"
+        android:paddingHorizontal="50dp"
         android:fontFamily="@font/intermedium"
-        android:textColor="@color/black"
         android:textSize="14sp"
         android:text="Kami merupakan salah satu agent vendor terbaik di kota Malang"/>
 
@@ -147,7 +148,7 @@
         android:id="@+id/menu_details"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         android:orientation="horizontal"
         android:gravity="center"
         app:layout_constraintTop_toBottomOf="@+id/line">
@@ -165,7 +166,6 @@
             android:layout_marginHorizontal="40dp"
             android:background="@drawable/borderregister"
             android:fontFamily="@font/interbold"
-            android:textColor="@color/black"
             android:textAllCaps="false"
             android:text="Speciality"/>
         <androidx.appcompat.widget.AppCompatButton
@@ -173,7 +173,6 @@
             android:layout_height="28dp"
             android:background="@drawable/borderregister"
             android:fontFamily="@font/interbold"
-            android:textColor="@color/black"
             android:textAllCaps="false"
             android:text="Review"/>
     </LinearLayout>
@@ -185,12 +184,20 @@
         app:layout_constraintTop_toBottomOf="@id/menu_details"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         android:paddingHorizontal="25dp"
         android:fontFamily="@font/interregular"
         android:textColor="@color/black"
         android:textSize="14sp"
         android:text="We are Bagus Organizer, the most popular event organizer based on Malang. Our dedicated team of event organizers acts as your agent, working tirelessly to find the perfect vendors to match your specific needs and budget. We take the hassle out of event planning, so you can focus on the fun stuff!"/>
+
+    <ImageView
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/bookmark_chat"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/line" />
 
     <LinearLayout
         android:id="@+id/bookmark_chat"
@@ -208,8 +215,10 @@
             android:layout_marginEnd="20dp"
             android:background="@drawable/borderbookmark"
             android:fontFamily="@font/interbold"
-            android:textColor="@color/black"
+            android:textColor="@color/pastelOrange"
             android:textAllCaps="false"
+            android:drawableStart="@drawable/bookmark"
+            android:paddingStart="15dp"
             android:text="Add Bookmark"/>
 
         <androidx.appcompat.widget.AppCompatButton
