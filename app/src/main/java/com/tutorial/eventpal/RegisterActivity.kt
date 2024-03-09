@@ -24,7 +24,7 @@ class RegisterActivity : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
         if (firebaseAuth.currentUser != null) {
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, AgentDetailActivity::class.java))
         }
     }
 
@@ -77,7 +77,7 @@ class RegisterActivity : AppCompatActivity() {
                     user!!.updateProfile(userUpdateProfile)
                         .addOnCompleteListener {
                             progressDialog.dismiss()
-                            startActivity(Intent(this, MainActivity::class.java))
+                            startActivity(Intent(this, AgentDetailActivity::class.java))
                         }
                         .addOnFailureListener{ error ->
                             Toast.makeText(this, error.localizedMessage, Toast.LENGTH_SHORT).show()
