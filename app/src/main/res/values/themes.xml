@@ -6,6 +6,15 @@
     </style>
 
     <style name="Theme.FirebaseApp" parent="Base.Theme.FirebaseApp" />
+
+    <style name="Theme.FirebaseApp.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.FirebaseApp.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.FirebaseApp.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
     Theme.AppCompat.DayNight.NoActionBar
 </resources>
 
