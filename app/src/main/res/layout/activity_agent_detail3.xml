@@ -194,7 +194,7 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/card_view"
                 android:layout_width="match_parent"
-                android:layout_height="180dp"
+                android:layout_height="230dp"
                 android:layout_marginTop="-10dp"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="15dp"
@@ -203,96 +203,164 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent">
 
-
                 <LinearLayout
-                    android:id="@+id/linear_client"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_gravity="center"
-                    android:layout_margin="15dp">
+                    android:orientation="vertical">
 
                     <LinearLayout
+                        android:id="@+id/linear_star"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:layout_marginTop="15dp"
+                        android:layout_gravity="center_horizontal">
+
                         <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="27dp"
-                            android:src="@drawable/specialhand"/>
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/star"/>
+
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:textAlignment="center"
-                            android:fontFamily="@font/intermedium"
-                            android:textSize="14sp"
-                            android:text="200+"/>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:textAlignment="center"
-                            android:fontFamily="@font/intermedium"
-                            android:textColor="@color/grey"
-                            android:textSize="12sp"
-                            android:text="clients"/>
+                            android:fontFamily="@font/interbold"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"
+                            android:textSize="18sp"
+                            android:textColor="@color/black"
+                            android:text="4,5" />
                     </LinearLayout>
 
-                    <LinearLayout
+                    <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="60dp"
-                        android:orientation="vertical">
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="27dp"
-                            android:src="@drawable/specialchat"/>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:textAlignment="center"
-                            android:fontFamily="@font/intermedium"
-                            android:textSize="14sp"
-                            android:text="95%+"/>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:textAlignment="center"
-                            android:fontFamily="@font/intermedium"
-                            android:textColor="@color/grey"
-                            android:textSize="12sp"
-                            android:text="within hours"/>
-                    </LinearLayout>
+                        android:fontFamily="@font/interregular"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:text="(276 reviews)" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/linereview" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical">
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="27dp"
-                            android:src="@drawable/specialstar"/>
-                        <TextView
-                            android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:textAlignment="center"
-                            android:fontFamily="@font/intermedium"
-                            android:textSize="14sp"
-                            android:text="4,5"/>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:textAlignment="center"
-                            android:fontFamily="@font/intermedium"
-                            android:textColor="@color/grey"
-                            android:textSize="12sp"
-                            android:text="rating"/>
+                            android:layout_marginTop="15dp"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/detailsrecom"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/interbold"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:textSize="14sp"
+                                android:textColor="@color/black"
+                                android:text="Great Recommend" />
+                        </LinearLayout>
 
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginStart="20dp"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/detailsrespond"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/interbold"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:textSize="14sp"
+                                android:textColor="@color/black"
+                                android:text="Fast Respond" />
+                        </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="25dp"
+                android:gravity="center_vertical"
+                app:layout_constraintTop_toBottomOf="@id/card_view"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/reviewsinta"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginStart="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/intersemi"
+                        android:layout_marginTop="5dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:text="Sinta Jojo"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/interregular"
+                        android:textSize="14sp"
+                        android:text="a day ago"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/borderrating"
+                    android:paddingVertical="5dp"
+                    android:paddingHorizontal="10dp">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/star"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/interbold"
+                        android:layout_marginStart="5dp"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:text="4,5" />
+                </LinearLayout>
+            </LinearLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
