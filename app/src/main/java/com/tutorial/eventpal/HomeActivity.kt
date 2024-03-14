@@ -15,12 +15,16 @@ class HomeActivity: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        recyclerView = findViewById(R.id.recyclerView)
+        recyclerView = findViewById(R.id.RecyclerViewHome)
         searchView = findViewById(R.id.searchView)
 
         recyclerView.setHasFixedSize(true)
         recyclerView.layoutManager = LinearLayoutManager(this)
 
         addDataToList()
+    }
+
+    private fun addDataToList(){
+
     }
 }
