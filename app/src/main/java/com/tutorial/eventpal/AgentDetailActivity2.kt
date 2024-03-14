@@ -10,6 +10,7 @@ import com.tutorial.firebaseapp.R
 class AgentDetailActivity2 : AppCompatActivity() {
     lateinit var btnAbout: AppCompatButton
     lateinit var btnReview: AppCompatButton
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_agent_detail2)
@@ -27,6 +28,5 @@ class AgentDetailActivity2 : AppCompatActivity() {
             val options = ActivityOptions.makeCustomAnimation(this, R.anim.slide_in_right, R.anim.slide_out_left)
             startActivity(intent, options.toBundle())
         }
-
     }
 }

@@ -61,7 +61,7 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
     //noinspection BomWithoutPlatform
-    implementation("com.google.firebase:firebase-bom:32.7.3")
+    implementation("com.google.firebase:firebase-bom:32.7.4")
     implementation("com.google.firebase:firebase-analytics-ktx")
     implementation(platform("com.google.firebase:firebase-bom:32.7.3"))
     implementation("com.google.firebase:firebase-analytics")
@@ -69,5 +69,4 @@ dependencies {
     implementation (platform("com.google.firebase:firebase-bom:31.5.0"))
     implementation ("com.google.firebase:firebase-auth-ktx")
     implementation ("com.google.android.gms:play-services-auth:21.0.0")
-
 }
