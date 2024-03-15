@@ -10,6 +10,8 @@ import com.tutorial.firebaseapp.R
 class AgentDetailActivity : AppCompatActivity() {
     lateinit var btnSpeciality: AppCompatButton
     lateinit var btnReview: AppCompatButton
+    lateinit var btnChat: AppCompatButton
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_agent_detail)
@@ -26,6 +28,12 @@ class AgentDetailActivity : AppCompatActivity() {
             val intent = Intent(this, AgentDetailActivity3::class.java)
             val options = ActivityOptions.makeCustomAnimation(this, R.anim.slide_in_right, R.anim.slide_out_left)
             startActivity(intent, options.toBundle())
+        }
+
+        btnChat = findViewById(R.id.btn_chat)
+        btnChat.setOnClickListener {
+            val intent = Intent(this, ChatActivity::class.java)
+            startActivity(intent)
         }
     }
 }

@@ -11,7 +11,8 @@ import com.tutorial.firebaseapp.R
 class AgentDetailActivity3 : AppCompatActivity() {
     lateinit var btnAbout: AppCompatButton
     lateinit var btnSpeciality: AppCompatButton
-    @SuppressLint("CutPasteId")
+    lateinit var btnChat: AppCompatButton
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_agent_detail3)
@@ -28,6 +29,12 @@ class AgentDetailActivity3 : AppCompatActivity() {
             val intent = Intent(this, AgentDetailActivity2::class.java)
             val options = ActivityOptions.makeCustomAnimation(this, R.anim.slide_in_right, R.anim.slide_out_left)
             startActivity(intent, options.toBundle())
+        }
+
+        btnChat = findViewById(R.id.btn_chat)
+        btnChat.setOnClickListener {
+            val intent = Intent(this, ChatActivity::class.java)
+            startActivity(intent)
         }
     }
 }

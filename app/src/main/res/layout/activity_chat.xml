@@ -8,7 +8,6 @@
     tools:context="com.tutorial.eventpal.ChatActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/blue_gradient"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:context="com.tutorial.eventpal.AgentDetailActivity3">
@@ -78,58 +77,72 @@
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
-    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/top_gradient"
+            android:layout_marginTop="-25dp"
+            android:src="@drawable/timegradient" />
 
-<!--        <ImageView-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            app:layout_constraintTop_toBottomOf="@id/blue_gradient"-->
-<!--            android:src="@drawable/timegradient"/>-->
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/top_gradient"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="-15dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/intermedium"
+            android:textSize="14sp"
+            android:text="14:40:15 left"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ImageView
-        android:id="@+id/line2"
+        android:id="@+id/bottom"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/bookmark_chat"
-        android:src="@drawable/line" />
+        android:layout_height="105dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/chat_bottom"
+        android:layout_alignParentBottom="true" />
 
     <LinearLayout
-        android:id="@+id/bookmark_chat"
+        android:id="@+id/message"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp">
+        android:layout_marginVertical="20dp">
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_bookmark"
-            android:layout_width="170dp"
-            android:layout_height="40dp"
-            android:layout_marginEnd="20dp"
-            android:background="@drawable/borderbookmark"
-            android:fontFamily="@font/interbold"
-            android:textColor="@color/pastelOrange"
-            android:textAllCaps="false"
-            android:drawableStart="@drawable/bookmark"
-            android:paddingStart="15dp"
-            android:text="Add Bookmark"/>
+        <ImageButton
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:background="@color/transparent"
+            android:src="@drawable/chatattach"/>
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_chat"
-            android:layout_width="170dp"
-            android:layout_height="40dp"
-            android:background="@drawable/borderchat"
-            android:fontFamily="@font/interbold"
-            android:textColor="@color/white"
-            android:textAllCaps="false"
-            android:text="Chat Now"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:background="@drawable/borderinputmsg"
+                android:fontFamily="@font/interregular"
+                android:textSize="12sp"
+                android:inputType="text"
+                android:hint="Message" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageButton
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:background="@color/transparent"
+            android:src="@drawable/chatsend"/>
+
     </LinearLayout>
 </RelativeLayout>
