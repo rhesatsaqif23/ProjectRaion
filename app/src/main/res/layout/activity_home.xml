@@ -120,7 +120,7 @@
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:id="@+id/partyButton"
+                    android:id="@+id/concertButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
@@ -144,7 +144,7 @@
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:id="@+id/partyButton"
+                    android:id="@+id/meetingButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
@@ -168,7 +168,7 @@
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:id="@+id/partyButton"
+                    android:id="@+id/workshopButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
@@ -200,7 +200,7 @@
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:id="@+id/partyButton"
+                    android:id="@+id/campusButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
@@ -224,7 +224,7 @@
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:id="@+id/partyButton"
+                    android:id="@+id/sportButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
@@ -248,7 +248,7 @@
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:id="@+id/partyButton"
+                    android:id="@+id/weddingButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
@@ -272,7 +272,7 @@
                 android:orientation="vertical">
 
                 <ImageButton
-                    android:id="@+id/partyButton"
+                    android:id="@+id/otherButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
@@ -385,7 +385,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
                     android:background="@color/transparent"
-                    android:src="@drawable/seemorebtn"
+                    android:src="@drawable/seemorebtn" />
 
             </LinearLayout>
         </LinearLayout>
