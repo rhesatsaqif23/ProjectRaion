@@ -9,6 +9,7 @@ import android.widget.EditText
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.userProfileChangeRequest
+import com.google.firebase.database.DatabaseReference
 import com.tutorial.firebaseapp.R
 
 class RegisterActivity : AppCompatActivity() {
@@ -20,6 +21,7 @@ class RegisterActivity : AppCompatActivity() {
     lateinit var btnSignIn: Button
     lateinit var progressDialog: ProgressDialog
     val firebaseAuth = FirebaseAuth.getInstance()
+    private lateinit var mDbRef: DatabaseReference
 
     override fun onStart() {
         super.onStart()

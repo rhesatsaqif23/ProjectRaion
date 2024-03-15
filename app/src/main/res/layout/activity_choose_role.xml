@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:layout_gravity="center_vertical"
+    android:background="@color/white"
+    android:padding="60dp"
+    tools:context="com.tutorial.eventpal.LoginActivity">
+
+    <ImageView
+        android:layout_width="149dp"
+        android:layout_height="164dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/iconapk" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:fontFamily="@font/intersemi"
+        android:gravity="center"
+        android:layout_marginVertical="10dp"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:text="Who are you?" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_user"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/bordersign"
+        android:textColor="@color/white"
+        android:fontFamily="@font/interbold"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:text="User" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_vendor"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/bordersign"
+        android:textColor="@color/white"
+        android:fontFamily="@font/interbold"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:text="Vendor" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_agent"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/bordersign"
+        android:textColor="@color/white"
+        android:fontFamily="@font/interbold"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:text="Agent" />
+
+</LinearLayout>

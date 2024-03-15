@@ -6,15 +6,15 @@ import android.os.Bundle
 import androidx.appcompat.widget.AppCompatButton
 import com.tutorial.firebaseapp.R
 
-class SplashActivity4 : AppCompatActivity() {
-    lateinit var btnStart: AppCompatButton
+class ChooseRoleActivity : AppCompatActivity() {
+    lateinit var btnUser: AppCompatButton
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_splash4)
+        setContentView(R.layout.activity_choose_role)
 
-        btnStart = findViewById(R.id.btn_start)
-        btnStart.setOnClickListener {
-            startActivity(Intent(this, ChooseRoleActivity::class.java))
+        btnUser = findViewById(R.id.btn_user)
+        btnUser.setOnClickListener {
+            startActivity(Intent(this, LoginActivity::class.java))
         }
     }
 }
