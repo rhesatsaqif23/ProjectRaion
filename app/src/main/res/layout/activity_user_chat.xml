@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    tools:context="com.tutorial.eventpal.ChatActivity">
+    android:background="@color/white">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/top_panel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context="com.tutorial.eventpal.AgentDetailActivity3">
+        tools:context="com.tutorial.eventpal.UserChatActivity">
 
         <ImageView
             android:id="@+id/top_gradient"
@@ -100,6 +100,16 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_panel"
+        android:layout_marginTop="-42dp"
+        android:layout_above="@id/bottom"
+        android:padding="8dp"/>
+
+
     <ImageView
         android:id="@+id/bottom"
         android:layout_width="match_parent"
@@ -118,6 +128,7 @@
         android:layout_marginVertical="20dp">
 
         <ImageButton
+            android:id="@+id/btn_attach"
             android:layout_width="65dp"
             android:layout_height="65dp"
             android:background="@color/transparent"
@@ -139,6 +150,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <ImageButton
+            android:id="@+id/btn_send"
             android:layout_width="65dp"
             android:layout_height="65dp"
             android:background="@color/transparent"
