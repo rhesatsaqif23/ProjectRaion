@@ -18,6 +18,7 @@
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="130dp"
+        android:gravity="center"
         app:layout_constraintTop_toTopOf="parent"
         android:orientation="horizontal">
 
@@ -28,18 +29,16 @@
             app:cardCornerRadius="8dp"
             app:cardElevation="12dp"
             app:cardUseCompatPadding="true"
-            android:layout_gravity="center_vertical"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
             <androidx.appcompat.widget.SearchView
                 android:id="@+id/searchView"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:iconifiedByDefault="false"
-                android:layout_gravity="center_vertical"
                 app:queryBackground="@android:color/transparent"
-                app:queryHint="Search here ..." />
+                app:queryHint="Search" />
 
 
         </com.google.android.material.card.MaterialCardView>
@@ -48,14 +47,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/cart"
-            android:layout_gravity="center_vertical"
             android:layout_marginStart="5dp"/>
         
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/homebookmark"
-            android:layout_gravity="center_vertical"
             android:layout_marginStart="5dp"/>
     </LinearLayout>
 
@@ -72,7 +69,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
+            android:layout_marginStart="13dp"
             android:layout_marginBottom="5dp"
             android:fontFamily="@font/intersemi"
             android:text="Specialist"
@@ -90,9 +87,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="3dp"
                 android:layout_marginEnd="10dp"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="3dp"
                 android:src="@drawable/iconparty" />
 
             <ImageButton
@@ -100,9 +97,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="3dp"
                 android:layout_marginEnd="10dp"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="3dp"
                 android:src="@drawable/iconconcert" />
 
             <ImageButton
@@ -110,9 +107,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="3dp"
                 android:layout_marginEnd="10dp"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="3dp"
                 android:src="@drawable/iconmeeting" />
 
             <ImageButton
@@ -120,9 +117,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="3dp"
                 android:layout_marginEnd="10dp"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="3dp"
                 android:src="@drawable/iconworkshop" />
         </LinearLayout>
 
@@ -181,9 +178,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="3dp"
                 android:layout_marginEnd="10dp"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="3dp"
                 android:src="@drawable/iconcampus" />
 
             <ImageButton
@@ -191,9 +188,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="3dp"
                 android:layout_marginEnd="10dp"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="3dp"
                 android:src="@drawable/iconsport" />
 
             <ImageButton
@@ -201,9 +198,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="3dp"
                 android:layout_marginEnd="10dp"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="3dp"
                 android:src="@drawable/iconwedding" />
 
             <ImageButton
@@ -211,9 +208,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="3dp"
                 android:layout_marginEnd="10dp"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="3dp"
                 android:src="@drawable/iconother" />
         </LinearLayout>
 
@@ -267,7 +264,7 @@
             android:text="Recommendation for you"
             android:fontFamily="@font/intersemi"
             android:textSize="24sp"
-            android:layout_marginStart="15dp"
+            android:layout_marginStart="13dp"
             android:textColor="@color/black"/>
     </LinearLayout>
     
