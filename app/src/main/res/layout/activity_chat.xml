@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white">
+    android:background="@drawable/chatbackground"
+    tools:context="com.tutorial.eventpal.ChatActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/top_panel"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:context="com.tutorial.eventpal.UserChatActivity">
+        android:layout_height="wrap_content">
 
         <ImageView
             android:id="@+id/top_gradient"
@@ -86,7 +86,6 @@
             android:src="@drawable/timegradient" />
 
         <TextView
-            android:id="@+id/description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/top_gradient"
@@ -100,22 +99,27 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/chatRecyclerView"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/top_panel"
-        android:layout_marginTop="-42dp"
-        android:layout_above="@id/bottom"
-        android:padding="8dp"/>
+        android:layout_above="@id/bottom">
 
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/chatRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:padding="10dp"/>
+
+    </RelativeLayout>
 
     <ImageView
         android:id="@+id/bottom"
         android:layout_width="match_parent"
         android:layout_height="105dp"
         android:scaleType="fitXY"
-        android:src="@drawable/chat_bottom"
+        android:src="@drawable/chatbottom"
         android:layout_alignParentBottom="true" />
 
     <LinearLayout

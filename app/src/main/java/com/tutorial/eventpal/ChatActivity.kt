@@ -1,20 +1,22 @@
+package com.tutorial.eventpal
+
+import ChatAdapter
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.EditText
 import android.widget.ImageButton
-import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.tutorial.eventpal.ChatMessage
 import com.tutorial.firebaseapp.R
 
-class UserChatActivity : AppCompatActivity() {
+class ChatActivity : AppCompatActivity() {
 
     private lateinit var chatAdapter: ChatAdapter
     private lateinit var messageEditText: EditText
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_user_chat)
+        setContentView(R.layout.activity_chat)
 
         val chatRecyclerView: RecyclerView = findViewById(R.id.chatRecyclerView)
         messageEditText = findViewById(R.id.username)

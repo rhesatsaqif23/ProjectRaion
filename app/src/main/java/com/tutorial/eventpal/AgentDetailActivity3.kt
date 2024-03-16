@@ -1,7 +1,5 @@
 package com.tutorial.eventpal
 
-import UserChatActivity
-import android.annotation.SuppressLint
 import android.app.ActivityOptions
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -34,7 +32,7 @@ class AgentDetailActivity3 : AppCompatActivity() {
 
         btnChat = findViewById(R.id.btn_chat)
         btnChat.setOnClickListener {
-            val intent = Intent(this, UserChatActivity::class.java)
+            val intent = Intent(this, ChatActivity::class.java)
             startActivity(intent)
         }
     }
