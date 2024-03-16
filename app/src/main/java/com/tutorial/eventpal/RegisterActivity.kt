@@ -21,7 +21,6 @@ class RegisterActivity : AppCompatActivity() {
     lateinit var btnSignIn: Button
     lateinit var progressDialog: ProgressDialog
     val firebaseAuth = FirebaseAuth.getInstance()
-    private lateinit var mDbRef: DatabaseReference
 
     override fun onStart() {
         super.onStart()
