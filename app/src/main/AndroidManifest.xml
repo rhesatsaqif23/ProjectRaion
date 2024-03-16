@@ -15,9 +15,9 @@
         <activity
             android:name="com.tutorial.eventpal.ChatActivity"
             android:exported="false" />
-        <activity
-            android:name="com.tutorial.eventpal.UserChatActivity"
-            android:exported="false" />
+<!--        <activity-->
+<!--            android:name="com.tutorial.eventpal.UserChatActivity"-->
+<!--            android:exported="false" />-->
         <activity
             android:name="com.tutorial.eventpal.ChooseRoleActivity"
             android:exported="false" />
@@ -30,11 +30,11 @@
         <activity
             android:name="com.tutorial.eventpal.AgentDetailActivity2"
             android:exported="false" />
-        <activity
-            android:name="com.tutorial.eventpal.AgentDetailActivity1"
-            android:exported="false"
-            android:label="@string/title_activity_agent_detail1"
-            android:theme="@style/Theme.FirebaseApp.NoActionBar" />
+<!--        <activity-->
+<!--            android:name="com.tutorial.eventpal.AgentDetailActivity1"-->
+<!--            android:exported="false"-->
+<!--            android:label="@string/title_activity_agent_detail1"-->
+<!--            android:theme="@style/Theme.FirebaseApp.NoActionBar" />-->
         <activity
             android:name="com.tutorial.eventpal.SplashActivity4"
             android:exported="false" />
@@ -68,6 +68,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.tutorial.eventpal.HomeAgentActivity"
+            android:exported="false"/>
     </application>
 
 </manifest>
