@@ -13,6 +13,7 @@
     <color name="orange">#FF8B13</color>
     <color name="pastelOrange">#E67D11</color>
     <color name="yellow">#F8BD00</color>
+    <color name="lightOrange">#FFDBB6</color>
     <color name="pastelYelow">#FFEBB0</color>
     <color name="transparent">#00FFFFFF</color>
 </resources>
