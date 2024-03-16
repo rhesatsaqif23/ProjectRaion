@@ -1,6 +1,7 @@
 package com.tutorial.eventpal
 
 import ChatAdapter
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.EditText
@@ -13,6 +14,7 @@ class ChatActivity : AppCompatActivity() {
 
     private lateinit var chatAdapter: ChatAdapter
     private lateinit var messageEditText: EditText
+    private lateinit var btnAttach: ImageButton
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,6 +33,12 @@ class ChatActivity : AppCompatActivity() {
             if (message.isNotEmpty()) {
                 sendMessage(message)
             }
+        }
+
+        btnAttach = findViewById(R.id.btn_attach)
+        btnAttach.setOnClickListener {
+            val intent = Intent(this, PaymentActivity1::class.java)
+            startActivity(intent)
         }
     }
 

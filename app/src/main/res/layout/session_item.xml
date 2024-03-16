@@ -18,13 +18,4 @@
         android:background="@drawable/bordersession"
         android:text="You’ve started a new session."/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_gravity="center_horizontal"
-        android:fontFamily="@font/intermedium"
-        android:textSize="14sp"
-        android:text="Hari ini" />
-
 </LinearLayout>
