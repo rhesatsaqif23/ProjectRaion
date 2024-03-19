@@ -64,10 +64,10 @@ class HomeAgentActivity: AppCompatActivity() {
 //            startActivity(intent)
 //        }
 
-        agentNavBarButton.setOnClickListener {
-            val intent = Intent(this, HomeAgentActivity::class.java)
-            startActivity(intent)
-        }
+//        agentNavBarButton.setOnClickListener {
+//            val intent = Intent(this, HomeAgentActivity::class.java)
+//            startActivity(intent)
+//        }
 
         seemorebutton1.setOnClickListener {
             val intent = Intent(this, AgentDetailActivity::class.java)
