@@ -13,9 +13,6 @@
         android:theme="@style/Theme.FirebaseApp"
         tools:targetApi="31" >
         <activity
-            android:name="com.tutorial.eventpal.HomeAgentActivity"
-            android:exported="false" />
-        <activity
             android:name="com.tutorial.eventpal.PaymentActivity2"
             android:exported="false" />
         <activity
@@ -59,6 +56,9 @@
             android:exported="false" />
         <activity
             android:name="com.tutorial.eventpal.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.tutorial.eventpal.HomeAgentActivity"
             android:exported="false" />
         <activity
             android:name="com.tutorial.eventpal.MainActivity"

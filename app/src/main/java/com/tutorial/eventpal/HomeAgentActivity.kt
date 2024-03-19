@@ -51,9 +51,6 @@ class HomeAgentActivity: AppCompatActivity() {
 //            startActivity(intent)
 //        }
 
-        // Implementasi untuk tombol lainnya seperti di atas
-        // ...
-
 //        homeNavBarButton.setOnClickListener {
 //            val intent = Intent(this, HomeNavBarActivity::class.java)
 //            startActivity(intent)
