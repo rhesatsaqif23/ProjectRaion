@@ -22,7 +22,7 @@ class LanguageAdapter(var mList: List<LanguageData>) :
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LanguageViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.each_item , parent , false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.search_item , parent , false)
         return LanguageViewHolder(view)
     }
 

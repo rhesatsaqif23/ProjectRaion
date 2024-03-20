@@ -2,25 +2,26 @@ package com.tutorial.eventpal
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
 import com.tutorial.firebaseapp.R
 
 class HomeAgentActivity: AppCompatActivity() {
-    lateinit var searchButton: AppCompatButton
-    lateinit var partyButton: AppCompatButton
-    lateinit var concertButton: AppCompatButton
-    lateinit var meetingButton: AppCompatButton
-    lateinit var workshopButton: AppCompatButton
-    lateinit var campusButton: AppCompatButton
-    lateinit var sportButton: AppCompatButton
-    lateinit var weddingButton: AppCompatButton
-    lateinit var otherButton: AppCompatButton
-    lateinit var homeNavBarButton: AppCompatButton
-    lateinit var cartNavBarButton: AppCompatButton
-    lateinit var agentNavBarButton: AppCompatButton
-    lateinit var accountNavBarButton: AppCompatButton
-    lateinit var seemorebutton1: AppCompatButton
+    lateinit var searchButton: ImageButton
+    lateinit var partyButton: ImageButton
+    lateinit var concertButton: ImageButton
+    lateinit var meetingButton: ImageButton
+    lateinit var workshopButton: ImageButton
+    lateinit var campusButton: ImageButton
+    lateinit var sportButton: ImageButton
+    lateinit var weddingButton: ImageButton
+    lateinit var otherButton: ImageButton
+    lateinit var homeNavBarButton: ImageButton
+    lateinit var cartNavBarButton: ImageButton
+    lateinit var agentNavBarButton: ImageButton
+    lateinit var accountNavBarButton: ImageButton
+    lateinit var seemorebutton1: ImageButton
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

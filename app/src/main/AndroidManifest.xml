@@ -16,6 +16,9 @@
             android:name="com.tutorial.eventpal.HomeAgentActivity"
             android:exported="false" />
         <activity
+            android:name="com.tutorial.eventpal.SearchActivity"
+            android:exported="false" />
+        <activity
             android:name="com.tutorial.eventpal.PaymentActivity2"
             android:exported="false" />
         <activity

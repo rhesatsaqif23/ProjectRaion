@@ -35,12 +35,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:boxBackgroundMode="outline"
+            app:hintEnabled="false"
+            app:hintAnimationEnabled="false"
             app:startIconDrawable="@drawable/iconusername">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/username"
                 android:layout_width="match_parent"
-                android:layout_height="45dp"
+                android:layout_height="50dp"
                 android:background="@drawable/borderlogin"
                 android:fontFamily="@font/robotoregular"
                 android:textSize="12sp"
@@ -62,12 +64,14 @@
             android:layout_height="wrap_content"
             app:boxBackgroundMode="outline"
             app:passwordToggleEnabled="true"
+            app:hintEnabled="false"
+            app:hintAnimationEnabled="false"
             app:startIconDrawable="@drawable/iconpassword">
 
             <EditText
                 android:id="@+id/password"
                 android:layout_width="match_parent"
-                android:layout_height="45dp"
+                android:layout_height="50dp"
                 android:background="@drawable/borderlogin"
                 android:fontFamily="@font/robotoregular"
                 android:textSize="12sp"
