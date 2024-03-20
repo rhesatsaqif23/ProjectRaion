@@ -8,8 +8,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.tutorial.firebaseapp.R
 
-class LanguageAdapter(var mList: List<LanguageData>) :
-    RecyclerView.Adapter<LanguageAdapter.LanguageViewHolder>() {
+class LanguageAdapter(var mList: List<LanguageData>) : RecyclerView.Adapter<LanguageAdapter.LanguageViewHolder>() {
 
     inner class LanguageViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val logoVendor : ImageView = itemView.findViewById(R.id.vendorLogoIV)
@@ -22,7 +21,7 @@ class LanguageAdapter(var mList: List<LanguageData>) :
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LanguageViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.each_item , parent , false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.search_item , parent , false)
         return LanguageViewHolder(view)
     }
 
