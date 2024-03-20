@@ -34,6 +34,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
             app:boxBackgroundMode="outline"
             app:hintEnabled="false"
             app:hintAnimationEnabled="false"
@@ -42,7 +43,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/username"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="48dp"
                 android:background="@drawable/borderlogin"
                 android:fontFamily="@font/robotoregular"
                 android:textSize="12sp"
@@ -62,6 +63,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
             app:boxBackgroundMode="outline"
             app:passwordToggleEnabled="true"
             app:hintEnabled="false"
@@ -71,7 +73,7 @@
             <EditText
                 android:id="@+id/password"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="48dp"
                 android:background="@drawable/borderlogin"
                 android:fontFamily="@font/robotoregular"
                 android:textSize="12sp"
