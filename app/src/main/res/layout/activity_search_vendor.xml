@@ -57,6 +57,7 @@
                 android:orientation="horizontal">
 
                 <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_all"
                     android:layout_width="85dp"
                     android:layout_height="30dp"
                     android:layout_marginHorizontal="5dp"
@@ -178,7 +179,7 @@
                     </LinearLayout>
 
                     <ImageButton
-                        android:id="@+id/froyonoin_arrow_button"
+                        android:id="@+id/arrow_detail"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
@@ -339,7 +340,7 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:src="@drawable/soundsystem"/>
+                            android:src="@drawable/miccondenser"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -354,7 +355,7 @@
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/intersemi"
                                 android:textColor="@color/black"
-                                android:text="Sound System"/>
+                                android:text="Mic Condenser"/>
 
                             <TextView
                                 android:layout_width="match_parent"
@@ -441,6 +442,7 @@
                 android:id="@+id/linear_searchvendor_card2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="-20dp"
                 android:orientation="horizontal"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/linear_searchvendor_card1">
@@ -465,7 +467,7 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:src="@drawable/soundsystem"/>
+                            android:src="@drawable/prjsmart"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -480,7 +482,7 @@
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/intersemi"
                                 android:textColor="@color/black"
-                                android:text="Sound System"/>
+                                android:text="Smart Projector"/>
 
                             <TextView
                                 android:layout_width="match_parent"
@@ -582,7 +584,7 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:src="@drawable/soundsystem"/>
+                            android:src="@drawable/prjepson"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -597,7 +599,7 @@
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/intersemi"
                                 android:textColor="@color/black"
-                                android:text="Sound System"/>
+                                android:text="Epson-EB"/>
 
                             <TextView
                                 android:layout_width="match_parent"
@@ -1023,6 +1025,7 @@
                 android:id="@+id/linear_searchvendor_card4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="-20dp"
                 android:orientation="horizontal"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/linear_searchvendor_card3">
