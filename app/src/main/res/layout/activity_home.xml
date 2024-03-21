@@ -96,6 +96,7 @@
                         android:layout_marginVertical="3dp"
                         android:background="@color/transparent"
                         android:src="@drawable/projectoricon"/>
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -172,25 +173,302 @@
                 </LinearLayout>
             </LinearLayout>
 
-            <TextView
-                android:id="@+id/recom_props"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginTop="20dp"
-                android:fontFamily="@font/intersemi"
-                android:textColor="@color/black"
-                android:textSize="18sp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/linear_need"
-                android:text="Recommended props"/>
-
             <LinearLayout
+                android:id="@+id/recom_props"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@id/recom_props"
+                android:layout_marginTop="20dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent">
+                app:layout_constraintTop_toBottomOf="@id/linear_need">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:fontFamily="@font/intersemi"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:text="Recommended props"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="90dp"
+                    android:fontFamily="@font/intersemi"
+                    android:textColor="@color/lightBlue"
+                    android:textSize="16sp"
+                    android:text="See more"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_card1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/recom_props">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="225dp"
+                    android:layout_height="265dp"
+                    android:layout_marginTop="-10dp"
+                    android:layout_marginStart="-5dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="15dp"
+                    app:cardUseCompatPadding="true"
+                    app:layout_constraintTop_toBottomOf="@id/recom_props"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/soundsystem"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/intersemi"
+                                android:textColor="@color/black"
+                                android:text="Sound System"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/intersemi"
+                                android:layout_marginStart="-45dp"
+                                android:background="@drawable/borderstar"
+                                android:drawablePadding="3dp"
+                                android:drawableStart="@drawable/starprop"
+                                android:padding="2dp"
+                                android:textColor="@color/black"
+                                android:textSize="12dp"
+                                android:text="4,5"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/interregular"
+                                android:background="@drawable/borderprops"
+                                android:drawablePadding="3dp"
+                                android:paddingVertical="4dp"
+                                android:paddingHorizontal="6dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="12dp"
+                                android:text="Concert"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:fontFamily="@font/interregular"
+                                android:background="@drawable/borderprops"
+                                android:drawablePadding="3dp"
+                                android:paddingVertical="4dp"
+                                android:paddingHorizontal="6dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="12dp"
+                                android:text="Party"/>
+
+                        </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/intersemi"
+                            android:textColor="@color/pastelOrange"
+                            android:text="Rp1.500.000"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/interregular"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:layout_marginStart="-80dp"
+                            android:text="/day"/>
+
+                    </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="225dp"
+                    android:layout_height="265dp"
+                    android:layout_marginTop="-10dp"
+                    android:layout_marginStart="-30dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="15dp"
+                    app:cardUseCompatPadding="true"
+                    app:layout_constraintTop_toBottomOf="@id/recom_props"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/soundsystem"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/intersemi"
+                                android:textColor="@color/black"
+                                android:text="Sound System"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/intersemi"
+                                android:layout_marginStart="-45dp"
+                                android:background="@drawable/borderstar"
+                                android:drawablePadding="3dp"
+                                android:drawableStart="@drawable/starprop"
+                                android:padding="2dp"
+                                android:textColor="@color/black"
+                                android:textSize="12dp"
+                                android:text="4,5"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/interregular"
+                                android:background="@drawable/borderprops"
+                                android:drawablePadding="3dp"
+                                android:paddingVertical="4dp"
+                                android:paddingHorizontal="6dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="12dp"
+                                android:text="Concert"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:fontFamily="@font/interregular"
+                                android:background="@drawable/borderprops"
+                                android:drawablePadding="3dp"
+                                android:paddingVertical="4dp"
+                                android:paddingHorizontal="6dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="12dp"
+                                android:text="Party"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/intersemi"
+                                android:textColor="@color/pastelOrange"
+                                android:text="Rp1.500.000"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/interregular"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                android:layout_marginStart="-80dp"
+                                android:text="/day"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/top_rent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/linear_card1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:fontFamily="@font/intersemi"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:text="Top-rent on Campus"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="90dp"
+                    android:fontFamily="@font/intersemi"
+                    android:textColor="@color/lightBlue"
+                    android:textSize="16sp"
+                    android:text="See more"/>
 
             </LinearLayout>
 
