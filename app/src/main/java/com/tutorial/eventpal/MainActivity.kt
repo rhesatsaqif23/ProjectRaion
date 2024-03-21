@@ -28,6 +28,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         textUsername = findViewById(R.id.username)
         btnLogout = findViewById(R.id.accountnavbarbtn)
+        btnAgent = findViewById(R.id.agentnavbarbtn)
 
         val firebaseUser = firebaseAuth.currentUser
         if (firebaseUser != null) {
