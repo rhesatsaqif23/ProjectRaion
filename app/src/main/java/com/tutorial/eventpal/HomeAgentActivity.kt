@@ -52,10 +52,10 @@ class HomeAgentActivity: AppCompatActivity() {
 //            startActivity(intent)
 //        }
 
-//        homeNavBarButton.setOnClickListener {
-//            val intent = Intent(this, HomeNavBarActivity::class.java)
-//            startActivity(intent)
-//        }
+        homeNavBarButton.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
 //
 //        cartNavBarButton.setOnClickListener {
 //            val intent = Intent(this, CartNavBarActivity::class.java)
