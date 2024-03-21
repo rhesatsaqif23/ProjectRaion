@@ -139,7 +139,7 @@
             android:layout_marginTop="5dp">
 
             <EditText
-                android:id="@+id/username"
+                android:id="@+id/adressOrder"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:background="@drawable/borderorder"
@@ -163,7 +163,7 @@
             android:layout_marginTop="5dp">
 
             <EditText
-                android:id="@+id/username"
+                android:id="@+id/notesOrder"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:background="@drawable/borderorder"
