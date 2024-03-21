@@ -34,7 +34,7 @@ class LoginActivity : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
         if (firebaseAuth.currentUser != null) {
-            startActivity(Intent(this, HomeAgentActivity::class.java))
+            startActivity(Intent(this, MainActivity::class.java))
         }
     }
 
@@ -56,7 +56,7 @@ class LoginActivity : AppCompatActivity() {
         val currentUser = firebaseAuth.currentUser
 
         if (currentUser != null) {
-            val intent = Intent(this, HomeAgentActivity::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             finish()
         }
@@ -85,7 +85,7 @@ class LoginActivity : AppCompatActivity() {
         progressDialog.show()
         firebaseAuth.signInWithEmailAndPassword(username, password)
             .addOnSuccessListener {
-                startActivity(Intent(this, HomeAgentActivity::class.java))
+                startActivity(Intent(this, MainActivity::class.java))
             }
             .addOnFailureListener{ error ->
                 Toast.makeText(this, error.localizedMessage, LENGTH_SHORT).show()
@@ -128,7 +128,7 @@ class LoginActivity : AppCompatActivity() {
                 if (task.isSuccessful) {
                     val user = firebaseAuth.currentUser
                     Toast.makeText(this, "Signed in as ${user?.displayName}", Toast.LENGTH_SHORT).show()
-                    startActivity(Intent(this, HomeAgentActivity::class.java))
+                    startActivity(Intent(this, MainActivity::class.java))
                     finish()
                 } else {
                     Toast.makeText(this, "Authentication failed", Toast.LENGTH_SHORT).show()
