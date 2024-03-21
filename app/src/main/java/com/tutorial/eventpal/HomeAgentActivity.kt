@@ -47,34 +47,9 @@ class HomeAgentActivity: AppCompatActivity() {
             startActivity(intent)
         }
 
-//        partyButton.setOnClickListener {
-//            val intent = Intent(this, PartyActivity::class.java)
-//            startActivity(intent)
-//        }
-
-        homeNavBarButton.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
-        }
-//
-//        cartNavBarButton.setOnClickListener {
-//            val intent = Intent(this, CartNavBarActivity::class.java)
-//            startActivity(intent)
-//        }
-
-//        agentNavBarButton.setOnClickListener {
-//            val intent = Intent(this, HomeAgentActivity::class.java)
-//            startActivity(intent)
-//        }
-
         seemorebutton1.setOnClickListener {
             val intent = Intent(this, AgentDetailActivity::class.java)
             startActivity(intent)
         }
-
-//        accountNavBarButton.setOnClickListener {
-//            val intent = Intent(this, AccountNavBarActivity::class.java)
-//            startActivity(intent)
-//        }
     }
 }

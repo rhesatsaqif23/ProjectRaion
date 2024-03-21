@@ -200,6 +200,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:gravity="center_horizontal"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/linear_froyonoinSearchVendor">
 
@@ -207,7 +208,6 @@
                     android:layout_width="225dp"
                     android:layout_height="265dp"
                     android:layout_marginTop="-20dp"
-                    android:layout_marginStart="-15dp"
                     app:cardCornerRadius="12dp"
                     app:cardElevation="15dp"
                     app:cardUseCompatPadding="true"
@@ -444,6 +444,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="-20dp"
                 android:orientation="horizontal"
+                android:gravity="center_horizontal"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/linear_searchvendor_card1">
 
@@ -451,7 +452,6 @@
                     android:layout_width="225dp"
                     android:layout_height="265dp"
                     android:layout_marginTop="-20dp"
-                    android:layout_marginStart="-15dp"
                     app:cardCornerRadius="12dp"
                     app:cardElevation="15dp"
                     app:cardUseCompatPadding="true"
@@ -783,6 +783,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:gravity="center_horizontal"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/linear_soperkapSearchVendor">
 
@@ -790,7 +791,6 @@
                     android:layout_width="225dp"
                     android:layout_height="265dp"
                     android:layout_marginTop="-20dp"
-                    android:layout_marginStart="-15dp"
                     app:cardCornerRadius="12dp"
                     app:cardElevation="15dp"
                     app:cardUseCompatPadding="true"
@@ -1027,6 +1027,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="-20dp"
                 android:orientation="horizontal"
+                android:gravity="center_horizontal"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/linear_searchvendor_card3">
 
@@ -1034,7 +1035,6 @@
                     android:layout_width="225dp"
                     android:layout_height="265dp"
                     android:layout_marginTop="-20dp"
-                    android:layout_marginStart="-15dp"
                     app:cardCornerRadius="12dp"
                     app:cardElevation="15dp"
                     app:cardUseCompatPadding="true"

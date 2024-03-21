@@ -14,8 +14,9 @@ class SearchAllActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_search_all)
 
-        btnVendor = findViewById(R.id.btn_vendor)
+        btnVendor = findViewById(R.id.btn_nav_vendor)
         btnVendor.setOnClickListener() {
             startActivity(Intent(this, SearchVendorActivity::class.java))
             finish()

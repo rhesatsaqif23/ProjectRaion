@@ -28,11 +28,12 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
         textUsername = findViewById(R.id.username)
         btnLogout = findViewById(R.id.accountnavbarbtn)
         btnAgent = findViewById(R.id.agentnavbarbtn)
         btnCampus = findViewById(R.id.campusButton)
-        btnSearch = findViewById(R.id.search_need)
+        btnSearch = findViewById(R.id.search_what_need)
 
         val firebaseUser = firebaseAuth.currentUser
         if (firebaseUser != null) {

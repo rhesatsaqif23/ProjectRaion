@@ -84,7 +84,7 @@
             </LinearLayout>
             
             <ImageButton
-                android:id="@+id/search_need"
+                android:id="@+id/search_what_need"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/transparent"
@@ -103,7 +103,7 @@
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/search_need"
+                app:layout_constraintTop_toBottomOf="@id/search_what_need"
                 android:text="Special for you!"/>
 
             <LinearLayout
@@ -377,6 +377,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:gravity="center_horizontal"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/most_wanted">
 
@@ -384,7 +385,6 @@
                     android:layout_width="225dp"
                     android:layout_height="265dp"
                     android:layout_marginTop="-10dp"
-                    android:layout_marginStart="-5dp"
                     app:cardCornerRadius="12dp"
                     app:cardElevation="15dp"
                     app:cardUseCompatPadding="true"
