@@ -17,7 +17,7 @@ import com.google.firebase.ktx.Firebase
 class MainActivity : AppCompatActivity() {
     lateinit var textUsername: TextView
     lateinit var btnLogout: ImageButton
-    lateinit var btnagent: ImageButton
+    lateinit var btnAgent: ImageButton
     lateinit var mGoogleSignInClient: GoogleSignInClient
     lateinit var mAuth: FirebaseAuth
 
@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
             finish()
         }
 
-        btnagent.setOnClickListener() {
+        btnAgent.setOnClickListener() {
             firebaseAuth.signOut()
             startActivity(Intent(this, HomeAgentActivity::class.java))
             finish()
