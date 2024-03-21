@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
     tools:context="com.tutorial.eventpal.LapakActivity1">
 
     <ImageView
@@ -57,6 +58,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="210dp"
+            android:background="@color/transparent"
             android:src="@drawable/micimage"/>
 
         <LinearLayout
