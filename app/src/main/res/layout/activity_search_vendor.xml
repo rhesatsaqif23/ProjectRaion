@@ -39,14 +39,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/transparent"
-                    android:src="@drawable/projectorsearch"
+                    android:src="@drawable/searchvendorimgdummy"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/linear_vendordetail" />
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/linear_time"
+                android:id="@+id/search_vendor_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toBottomOf="@id/search_all_top"
@@ -60,10 +60,9 @@
                     android:layout_width="85dp"
                     android:layout_height="30dp"
                     android:layout_marginHorizontal="5dp"
-                    android:background="@drawable/borderpayon"
+                    android:background="@drawable/borderpayblank"
                     android:fontFamily="@font/intersemi"
                     android:textAllCaps="false"
-                    android:textColor="@color/white"
                     android:textSize="14sp"
                     android:text="All"/>
 
@@ -91,11 +90,89 @@
                     android:layout_width="85dp"
                     android:layout_height="30dp"
                     android:layout_marginHorizontal="5dp"
-                    android:background="@drawable/borderpayblank"
+                    android:background="@drawable/borderpayon"
                     android:fontFamily="@font/intersemi"
                     android:textAllCaps="false"
+                    android:textColor="@color/white"
                     android:textSize="14sp"
                     android:text="Vendor"/>
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/search_vendor_button">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/froyonioncicrcle"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/intersemi"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:text="Froyonion"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/interbold"
+                            android:textColor="@color/orange"
+                            android:textSize="14sp"
+                            android:layout_marginEnd="3dp"
+                            android:text="100"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/intermedium"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:text="Products"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="4.5"
+                            android:layout_marginStart="30dp"
+                            android:fontFamily="@font/intermedium"
+                            android:textSize="14sp"
+                            android:layout_marginEnd="3dp"
+                            android:textColor="@color/orange"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/intermedium"
+                            android:text="Ratings"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="70dp"
+                    android:src="@drawable/arrowleftbold"/>
             </LinearLayout>
 
 
