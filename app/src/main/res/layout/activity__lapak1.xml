@@ -54,7 +54,7 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="210dp"
             android:src="@drawable/micimage"/>
 
         <LinearLayout
@@ -126,7 +126,61 @@
 
             <ImageView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/starslidedown"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textSize="28sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/interbold"
+            android:text="Deskripsi"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/intersemi"
+            android:textColor="@color/black"
+            android:text="Lorem ipsum dolor sit amet consectetur. Dui nisl odio ut et risus sed dui. Vestibulum aenean magna etiam faucibus a sed convallis sit libero. Accumsan maecenas faucibus odio nisi eget. Pellentesque auctor in interdum orci quis."/>
+
+        <LinearLayout
+            android:id="@+id/cartnrent_lapak1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_addtocart"
+                android:layout_width="170dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/borderaddtocart"
+                android:fontFamily="@font/interbold"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:text="Add to Cart"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_rent"
+                android:layout_width="170dp"
+                android:layout_height="50dp"
+                android:background="@drawable/borderrentnow"
+                android:fontFamily="@font/interbold"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:text="Rent Now!"/>
         </LinearLayout>
 
     </LinearLayout>
