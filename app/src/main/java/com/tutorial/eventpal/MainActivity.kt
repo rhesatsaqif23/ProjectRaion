@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var btnLogout: ImageButton
     lateinit var btnAgent: ImageButton
     lateinit var btnCampus: ImageButton
+    lateinit var btnSearch: ImageButton
     lateinit var mGoogleSignInClient: GoogleSignInClient
     lateinit var mAuth: FirebaseAuth
 
@@ -31,6 +32,7 @@ class MainActivity : AppCompatActivity() {
         btnLogout = findViewById(R.id.accountnavbarbtn)
         btnAgent = findViewById(R.id.agentnavbarbtn)
         btnCampus = findViewById(R.id.campusButton)
+        btnSearch = findViewById(R.id.search_need)
 
         val firebaseUser = firebaseAuth.currentUser
         if (firebaseUser != null) {
@@ -53,6 +55,11 @@ class MainActivity : AppCompatActivity() {
 
         btnCampus.setOnClickListener() {
             startActivity(Intent(this, HomeActivity::class.java))
+            finish()
+        }
+
+        btnSearch.setOnClickListener() {
+            startActivity(Intent(this, SearchAllActivity::class.java))
             finish()
         }
 

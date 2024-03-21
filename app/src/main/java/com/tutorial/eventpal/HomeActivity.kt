@@ -8,6 +8,8 @@ import com.tutorial.firebaseapp.R
 
 class HomeActivity : AppCompatActivity() {
     lateinit var btnProjector: ImageButton
+    lateinit var btnAgent: ImageButton
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
@@ -16,6 +18,12 @@ class HomeActivity : AppCompatActivity() {
         btnProjector.setOnClickListener {
             val intent = Intent(this, SearchAllActivity::class.java)
             startActivity(intent)
+        }
+
+        btnAgent = findViewById(R.id.agentnavbarbtn)
+        btnAgent.setOnClickListener() {
+            startActivity(Intent(this, HomeAgentActivity::class.java))
+            finish()
         }
     }
 }
