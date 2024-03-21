@@ -10,7 +10,6 @@ import com.tutorial.firebaseapp.R
 class VendorDetailActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_vendor_detail)
+
     }
 }
