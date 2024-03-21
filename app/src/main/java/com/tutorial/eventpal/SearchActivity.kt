@@ -63,6 +63,8 @@ class SearchActivity : AppCompatActivity(){
         mList.add(LanguageData("Bagus Organizer", R.drawable.bagusorganizerimg))
         mList.add(LanguageData("Agus Organiser", R.drawable.bagusorganizerimg))
         mList.add(LanguageData("Bayu Organiser", R.drawable.bagusorganizerimg))
+        mList.add(LanguageData("Udin Organiser", R.drawable.bagusorganizerimg))
+        mList.add(LanguageData("Adit Organiser", R.drawable.bagusorganizerimg))
     }
 
 }
