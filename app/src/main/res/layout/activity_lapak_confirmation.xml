@@ -69,7 +69,7 @@
             android:textColor="@color/white"
             android:layout_marginStart="52dp"
             android:textSize="18sp"
-            android:text="Confirmation"
+            android:text="Confirmation"/>
     </LinearLayout>
 
     <LinearLayout
@@ -120,7 +120,7 @@
                     android:textColor="@color/black"
                     android:fontFamily="@font/intermedium"
                     android:textSize="14sp"
-                    android:text="1 x 21.000,00"
+                    android:text="1 x 21.000,00"/>
             </LinearLayout>
         </LinearLayout>
 
@@ -151,7 +151,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5p"
+            android:layout_marginTop="5dp"
             android:textColor="@color/black"
             android:fontFamily="@font/intersemi"
             android:textSize="18sp"
