@@ -21,16 +21,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="40dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
                 <ImageButton
-                    android:id="@+id/arrowbackSarchAll"
+                    android:id="@+id/arrowbackSearchAll"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
                     android:background="@color/transparent"
                     android:src="@drawable/arrowbackblack"/>
 
@@ -38,6 +39,7 @@
                     android:id="@+id/search_vendor"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="-10dp"
                     android:background="@color/transparent"
                     android:src="@drawable/projectorsearch"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -102,6 +104,7 @@
                 android:id="@+id/linear_searchall_card1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:orientation="horizontal"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/search_all_button">
@@ -126,7 +129,7 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:src="@drawable/soundsystem"/>
+                            android:src="@drawable/prjsmart"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -141,7 +144,7 @@
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/intersemi"
                                 android:textColor="@color/black"
-                                android:text="Sound System"/>
+                                android:text="Smart Projector"/>
 
                             <TextView
                                 android:layout_width="match_parent"
@@ -243,7 +246,7 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:src="@drawable/soundsystem"/>
+                            android:src="@drawable/prjrefocus"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -258,7 +261,7 @@
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/intersemi"
                                 android:textColor="@color/black"
-                                android:text="Sound System"/>
+                                android:text="Infocus"/>
 
                             <TextView
                                 android:layout_width="match_parent"
@@ -345,6 +348,7 @@
                 android:id="@+id/linear_searchall_card2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="-20dp"
                 android:orientation="horizontal"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/linear_searchall_card1">
@@ -352,7 +356,7 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="225dp"
                     android:layout_height="265dp"
-                    android:layout_marginTop="-10dp"
+                    android:layout_marginTop="-20dp"
                     android:layout_marginStart="-15dp"
                     app:cardCornerRadius="12dp"
                     app:cardElevation="15dp"
@@ -369,7 +373,7 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:src="@drawable/soundsystem"/>
+                            android:src="@drawable/prjepson"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -384,7 +388,7 @@
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/intersemi"
                                 android:textColor="@color/black"
-                                android:text="Sound System"/>
+                                android:text="Epson-EB"/>
 
                             <TextView
                                 android:layout_width="match_parent"
@@ -469,7 +473,7 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="225dp"
                     android:layout_height="265dp"
-                    android:layout_marginTop="-10dp"
+                    android:layout_marginTop="-20dp"
                     android:layout_marginStart="-30dp"
                     app:cardCornerRadius="12dp"
                     app:cardElevation="15dp"
@@ -486,7 +490,7 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:src="@drawable/soundsystem"/>
+                            android:src="@drawable/prjviewsonic"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -501,7 +505,7 @@
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/intersemi"
                                 android:textColor="@color/black"
-                                android:text="Sound System"/>
+                                android:text="Viewsonic"/>
 
                             <TextView
                                 android:layout_width="match_parent"
@@ -588,6 +592,7 @@
                 android:id="@+id/linear_searchall_card3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="-20dp"
                 android:orientation="horizontal"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/linear_searchall_card2">
@@ -595,7 +600,7 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="225dp"
                     android:layout_height="265dp"
-                    android:layout_marginTop="-10dp"
+                    android:layout_marginTop="-20dp"
                     android:layout_marginStart="-15dp"
                     app:cardCornerRadius="12dp"
                     app:cardElevation="15dp"
@@ -612,7 +617,7 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:src="@drawable/soundsystem"/>
+                            android:src="@drawable/prjsmart"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -627,7 +632,7 @@
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/intersemi"
                                 android:textColor="@color/black"
-                                android:text="Sound System"/>
+                                android:text="Smart Projector"/>
 
                             <TextView
                                 android:layout_width="match_parent"
@@ -712,7 +717,7 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="225dp"
                     android:layout_height="265dp"
-                    android:layout_marginTop="-10dp"
+                    android:layout_marginTop="-20dp"
                     android:layout_marginStart="-30dp"
                     app:cardCornerRadius="12dp"
                     app:cardElevation="15dp"
@@ -729,7 +734,7 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:src="@drawable/soundsystem"/>
+                            android:src="@drawable/prjrefocus"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -744,7 +749,7 @@
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/intersemi"
                                 android:textColor="@color/black"
-                                android:text="Sound System"/>
+                                android:text="Infocus"/>
 
                             <TextView
                                 android:layout_width="match_parent"
