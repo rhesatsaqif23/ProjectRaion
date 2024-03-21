@@ -15,7 +15,7 @@
         android:src="@drawable/hometopgradient"/>
 
     <LinearLayout
-        android:id="@+id/linearLayout"
+        android:id="@+id/linear_search"
         android:layout_width="match_parent"
         android:layout_height="130dp"
         android:gravity="center"
@@ -42,7 +42,6 @@
             android:layout_marginStart="5dp"/>
     </LinearLayout>
 
-
     <LinearLayout
         android:id="@+id/homeIconGroup"
         android:layout_width="match_parent"
@@ -58,9 +57,9 @@
             android:layout_marginStart="27dp"
             android:layout_marginBottom="5dp"
             android:fontFamily="@font/intersemi"
-            android:text="Specialist"
             android:textColor="@color/black"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:text="Specialist"/>
 
         <LinearLayout
             android:layout_width="match_parent"
