@@ -488,6 +488,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="-30dp"
         android:scaleType="fitXY"/>
 
     <LinearLayout
@@ -498,43 +499,40 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/navbarbackground"
         android:gravity="center"
+        android:layout_marginBottom="-15dp"
         android:orientation="horizontal">
 
         <ImageButton
             android:id="@+id/homenavbarbtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:background="@color/transparent"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:src="@drawable/homenavbar"/>
+            android:layout_marginHorizontal="18dp"
+            android:src="@drawable/homenavoff"/>
 
         <ImageButton
             android:id="@+id/cartnavbarbtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:background="@color/transparent"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:src="@drawable/cartnavbar"/>
+            android:layout_marginHorizontal="18dp"
+            android:src="@drawable/cartnavoff"/>
 
         <ImageButton
             android:id="@+id/agentnavbarbtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:background="@color/transparent"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:src="@drawable/agentnavbar"/>
+            android:layout_marginHorizontal="18dp"
+            android:src="@drawable/agentnavon"/>
 
         <ImageButton
             android:id="@+id/accountnavbarbtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:background="@color/transparent"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:src="@drawable/accountnavbar"/>
+            android:layout_marginHorizontal="18dp"
+            android:src="@drawable/accountnavoff"/>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

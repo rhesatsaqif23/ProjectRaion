@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.TextView
 import com.google.firebase.auth.FirebaseAuth
 import com.tutorial.firebaseapp.R
@@ -15,8 +16,7 @@ import com.google.firebase.ktx.Firebase
 
 class MainActivity : AppCompatActivity() {
     lateinit var textUsername: TextView
-    lateinit var textEmail:TextView
-    lateinit var btnLogout: Button
+    lateinit var btnLogout: ImageButton
     lateinit var mGoogleSignInClient: GoogleSignInClient
     lateinit var mAuth: FirebaseAuth
 
@@ -26,13 +26,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         textUsername = findViewById(R.id.username)
-        textEmail = findViewById(R.id.email)
-        btnLogout = findViewById(R.id.btn_logout)
+        btnLogout = findViewById(R.id.accountnavbarbtn)
 
         val firebaseUser = firebaseAuth.currentUser
         if (firebaseUser != null) {
             textUsername.text = firebaseUser.displayName
-            textEmail.text = firebaseUser.email
         } else {
             startActivity(Intent(this, SplashActivity2::class.java))
             finish()
@@ -56,10 +54,10 @@ class MainActivity : AppCompatActivity() {
 
         if (user != null) {
             val userName = user.displayName
-            textUsername.text = "Welcome, " + userName
+            textUsername.text = "Hi, " + userName
         }
 
-        val btnLogout = findViewById<Button>(R.id.btn_logout)
+        val btnLogout = findViewById<ImageButton>(R.id.accountnavbarbtn)
         btnLogout.setOnClickListener {
             signOutAndStartSignInActivity()
         }

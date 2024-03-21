@@ -53,7 +53,7 @@ class LoginActivity : AppCompatActivity() {
         progressDialog.setMessage("Please wait...")
 
         firebaseAuth = FirebaseAuth.getInstance()
-//        val currentUser = firebaseAuth.currentUser
+        val currentUser = firebaseAuth.currentUser
 
         if (currentUser != null) {
             val intent = Intent(this, AgentDetailActivity::class.java)
@@ -76,12 +76,6 @@ class LoginActivity : AppCompatActivity() {
         btnGoogle.setOnClickListener {
             signInGoogle()
         }
-
-        // Memastikan pengguna langsung dialihkan ke HomeAgentActivity jika sudah login
-        val currentUser = firebaseAuth.currentUser
-        if (currentUser != null) {
-            redirectToHome()
-        }
     }
 
     private fun processSignIn() {
@@ -91,7 +85,7 @@ class LoginActivity : AppCompatActivity() {
         progressDialog.show()
         firebaseAuth.signInWithEmailAndPassword(username, password)
             .addOnSuccessListener {
-                redirectToHome() // Arahkan ke HomeAgentActivity setelah login berhasil
+                startActivity(Intent(this, AgentDetailActivity::class.java))
             }
             .addOnFailureListener{ error ->
                 Toast.makeText(this, error.localizedMessage, LENGTH_SHORT).show()
@@ -136,16 +130,9 @@ class LoginActivity : AppCompatActivity() {
                     Toast.makeText(this, "Signed in as ${user?.displayName}", Toast.LENGTH_SHORT).show()
                     startActivity(Intent(this, AgentDetailActivity::class.java))
                     finish()
-                    redirectToHome() // Arahkan ke HomeAgentActivity setelah login berhasil
                 } else {
                     Toast.makeText(this, "Authentication failed", Toast.LENGTH_SHORT).show()
                 }
             }
-    }
-
-    private fun redirectToHome() {
-        val intent = Intent(this, HomeAgentActivity::class.java)
-        startActivity(intent)
-        finish() // Menutup LoginActivity agar tidak bisa kembali ke sana dengan menekan tombol kembali
     }
 }
