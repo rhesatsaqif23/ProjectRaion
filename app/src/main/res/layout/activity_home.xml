@@ -90,7 +90,7 @@
                     android:orientation="vertical">
 
                     <ImageButton
-                        android:id="@+id/partyButton"
+                        android:id="@+id/projector_button"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="3dp"
@@ -113,7 +113,7 @@
                     android:orientation="vertical">
 
                     <ImageButton
-                        android:id="@+id/concertButton"
+                        android:id="@+id/sound_button"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="3dp"
@@ -135,7 +135,7 @@
                     android:orientation="vertical">
 
                     <ImageButton
-                        android:id="@+id/meetingButton"
+                        android:id="@+id/mic_button"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="3dp"
@@ -157,7 +157,7 @@
                     android:orientation="vertical">
 
                     <ImageButton
-                        android:id="@+id/workshopButton"
+                        android:id="@+id/ht_button"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="3dp"
